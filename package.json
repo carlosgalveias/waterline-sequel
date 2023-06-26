@@ -1,7 +1,7 @@
 {
   "name": "waterline-sequel",
   "description": "A helper library for generating SQL queries from the Waterline Query Language.",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "author": "Cody Stoltman <particlebanana@gmail.com>",
   "url": "http://github.com/balderdashy/waterline-sequel",
   "keywords": [],
@@ -10,7 +10,7 @@
     "url": "git://github.com/balderdashy/waterline-sequel.git"
   },
   "dependencies": {
-    "lodash": "3.10.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "async": "1.5.2",
@@ -24,7 +24,7 @@
     "waterline-adapter-tests": "~0.10.17"
   },
   "scripts": {
-    "test": "make test",
+    "test": "node ./node_modules/mocha/bin/_mocha test/unit test/queries --recursive",
     "test-integration": "make test-integration"
   },
   "main": "sequel/index",
